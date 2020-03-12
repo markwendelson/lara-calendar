@@ -148,6 +148,7 @@
                   },
                   displayCalendar() {
                     var calendarEl = document.getElementById('calendar');
+                    calendarEl.innerHTML = "";
                     var calendar = new FullCalendar.Calendar(calendarEl, {
                         plugins: [ 'dayGrid' ],
                         events: this.event_list,
